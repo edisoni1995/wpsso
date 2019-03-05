@@ -144,7 +144,7 @@ if ( ! class_exists( 'SucomUtilWP' ) ) {
 
 				if ( defined( 'WP_HOME' ) && WP_HOME ) {
 
-					$url = untrailingslashit( WP_HOME );
+					$url = get_option('home');
 
 					/**
 					 * Compare value stored in database and maybe fix inconsistencies.
